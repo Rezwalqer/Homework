@@ -31,8 +31,10 @@ public class Main {
         if (b1 < a2) {
             System.out.println("Отрезки не пересекаются");
         } else if ((a1 < a2 && a2 < b1) || (a2 < b1 && a2 < b2)) {
-            System.out.println("Начало отрезка " + a2);}
-       // } else if (a1 < b2 && a2 < b2 && b2 > b1
+            System.out.println("Начало отрезка " + a2);
+        } else if ((a2 < a1 && a1 < b1) || (a1 < b1 && a1 < b2)){
+            System.out.println("Начало отрезка " + a2);
+        }
 
     }
 }
